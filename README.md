@@ -413,5 +413,6 @@ print("Соединение с базой данных закрыто")
 Научилась определять наиболее эффективный метод загрузки данных (малых и больших объемов) из CSV-файлов в СУБД PostgreSQL, сравнивая время выполнения для методов: pandas.to_sql(), psycopg2.copy_expert() (с файлом и с io.StringIO), и пакетная вставка (psycopg2.extras.execute_values).
 
 ## Структура репозитория:
-- `erd_diagram.png` — ERD диаграмма схемы базы данных.
+- `ERD_diagram_sales_small.png` — ERD диаграмма таблицы sales_small.
+- `ERD_diagram_sales_big.png` — ERD диаграмма таблицы sales_big.
 - `Gubaidullina_Alina_Ilshatovna.ipynb` — Jupyter Notebook с выполнением всех заданий.

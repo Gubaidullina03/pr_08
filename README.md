@@ -415,4 +415,4 @@ print("Соединение с базой данных закрыто")
 ## Структура репозитория:
 - `ERD_diagram_sales_small.png` — ERD диаграмма таблицы sales_small.
 - `ERD_diagram_sales_big.png` — ERD диаграмма таблицы sales_big.
-- `Gubaidullina_Alina_Ilshatovna.ipynb` — Jupyter Notebook с выполнением всех заданий.
+- `Gubaidullina_Alina_Ilshatovna_pr8.ipynb` — Jupyter Notebook с выполнением всех заданий.

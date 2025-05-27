@@ -251,6 +251,14 @@ def load_via_copy_file(file_path, tbl_name):
 
 print("Вспомогательные функции определены.")
 ```
+
+Получим результат:
+
+
+![Screenshot_67](https://github.com/user-attachments/assets/3541af87-c300-4673-9b7b-7bef92151473)
+
+
+
 ```python
 # @title Вспомогательные Функции (Часть Базового Кода - УБЕДИТЕСЬ, ЧТО ЭТА ЯЧЕЙКА ВЫПОЛНЕНА!)
 
@@ -279,6 +287,13 @@ def load_df_from_sql(sql_query):
 
 print("Вспомогательные функции определены.")
 ```
+
+Получим результат:
+
+
+![Screenshot_67](https://github.com/user-attachments/assets/e9a862c6-3e1d-4c33-8b5a-150783d28306)
+
+
 
 Приступаем к созданию таблиц
 ```python
@@ -313,8 +328,16 @@ else:
     create_table(big_table_name)
     # Функция create_table должна вывести сообщения об успехе/ошибке
 ```
-Получаем результат:
-оооооооо
+Получаем результаты:
+
+
+![Screenshot_68](https://github.com/user-attachments/assets/a4e0f34e-bfab-451e-991f-133b5d1cef45)
+
+
+
+![Screenshot_69](https://github.com/user-attachments/assets/7f7de513-ec1d-4bba-95eb-7b2ea0ddc2f6)
+
+
 
 ## Задание 2. Загрузить малые данные методом copy_expert (file)
 ```python
@@ -327,6 +350,14 @@ else:
         # Сообщение, если файл не найден
         print(f"ОШИБКА: Файл '{small_csv_path}' не найден. Загрузка не выполнена.")
 ```
+Получим результат:
+
+
+![Screenshot_70](https://github.com/user-attachments/assets/da4f794b-0754-44fc-998b-04e1517afeb6)
+
+
+
+
 ## Задание 3. Загрузить большие данные методом copy_expert (file)
 ```python
             # --- Задача 3: Загрузка больших данных (copy_expert file) ---
@@ -339,6 +370,14 @@ else:
         # Сообщение, если файл не найден
         print(f"ОШИБКА: Файл '{big_csv_path}' не найден. Загрузка не выполнена.")
 ```
+
+Получим результат:
+
+
+![Screenshot_71](https://github.com/user-attachments/assets/3f5069bb-d87b-4504-a5a1-2eb0056f0839)
+
+
+
 ## Задание 4. SQL Анализ: подсчитать записи в sales_small, где total_revenue > 200.
 ```python
             # --- Задача 4: SQL Анализ ---
@@ -362,8 +401,15 @@ else:
             print("Запрос успешно выполнен, но не вернул строк.")
     else:
         print("Ошибка выполнения SQL запроса.")
-
 ```
+
+Получим результат:
+
+
+![Screenshot_72](https://github.com/user-attachments/assets/9a54cb90-a641-4f31-af6b-b63ba74ba636)
+
+
+
 ## Задание 5. Python/Colab Анализ и Визуализация: построить гистограмму quantity из sales_big (LIMIT 50000).
 ```python
         # --- Задача 5: Python Визуализация ---
@@ -409,10 +455,15 @@ print("Соединение с базой данных закрыто")
 ```
 Получаем результат
 
+
+![Screenshot_73](https://github.com/user-attachments/assets/6a46c874-12fe-4b84-ab9d-6828ece911c7)
+
+
+
 ## Вывод
 Научилась определять наиболее эффективный метод загрузки данных (малых и больших объемов) из CSV-файлов в СУБД PostgreSQL, сравнивая время выполнения для методов: pandas.to_sql(), psycopg2.copy_expert() (с файлом и с io.StringIO), и пакетная вставка (psycopg2.extras.execute_values).
 
 ## Структура репозитория:
 - `ERD_diagram_sales_small.png` — ERD диаграмма таблицы sales_small.
 - `ERD_diagram_sales_big.png` — ERD диаграмма таблицы sales_big.
-- `Gubaidullina_Alina_Ilshatovna_pr8.ipynb` — Jupyter Notebook с выполнением всех заданий.
+- `Gubaidulina_Alina_Ilshatovna_pr8.ipynb` — Jupyter Notebook с выполнением всех заданий.
